@@ -1,0 +1,253 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  font-weight: 100 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v311/kJEPBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzBwG-RpA6RzaxHMPdY40KH8nGzv3fzfVJO1Q.woff2) format('woff2');
+}
+
+@theme {
+
+  /* colors */
+  --color-primary: #06B6D4;
+  --color-primary-dark: #0891B2;
+  --color-primary-light: #CFFAFE;
+  --color-primary-text: #0E7490;
+  --color-corp-bg: #FFFFFF;
+  --color-corp-card: #FFFFFF;
+  --color-corp-sidebar: #0F172A;
+  --color-text-main: #0F172A;
+  --color-text-body: #475569;
+  --color-border-color: #E2E8F0;
+  --color-glow-color: rgba(6; 182; 212; 0.15)
+    /* font family */
+    --font-Manrope: Manrope, sans-serif;
+  --font-Epilogue: Epilogue, sans-serif;
+
+  /* Border radius */
+  --border-radius-xl: 1rem;
+  --border-radius-2xl: 1.5rem;
+  --border-radius-3xl: 2rem;
+
+  /* Box Shadow */
+  --box-shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
+  --box-shadow-hover: 0 10px 30px rgba(0, 0, 0, 0.1);
+  --bow-shadow-glow: 0 0 15px rgba(6, 182, 212, 0.2);
+  --bow-shadow-glow-hover: 0 0 25px rgba(6, 182, 212, 0.3);
+
+
+}
+
+/* assign font family */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-Manrope);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-Epilogue);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #06B6D4;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?iboqd');
+  src:  url('fonts/icomoon.eot?iboqd#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?iboqd') format('truetype'),
+    url('fonts/icomoon.woff?iboqd') format('woff'),
+    url('fonts/icomoon.svg?iboqd#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-linkedin:before {
+  content: "\e902";
+  /*color: #0077b7;*/
+}
+
+.icon-github:before {
+  content: "\e903";
+}
+
+.icon-whatsapp:before {
+  content: "\e901";
+}
+
+.icon-react:before {
+  content: "\e91e";
+  color: #53c1de;
+}
+
+.icon-tailwind:before {
+  content: "\e91d";
+  color: #38bdf8;
+}
+
+.icon-css .path1:before {
+  content: "\e913";
+  color: #0c73b8;
+}
+.icon-css .path2:before {
+  content: "\e914";
+  color: #30a9dc;
+  margin-left: -1em;
+}
+.icon-css .path3:before {
+  content: "\e915";
+  color: #ecedee;
+  margin-left: -1em;
+}
+.icon-css .path4:before {
+  content: "\e916";
+  color: #fff;
+  margin-left: -1em;
+}
+
+.icon-javascript:before {
+  content: "\e917";
+  color: #f7df1e;
+}
+
+.icon-javascript:after {
+  content: "\e918";
+  color: #000;
+  margin-left: -1em;
+}
+
+.icon-html .path1:before {
+  content: "\e919";
+  color: #e34f26;
+}
+.icon-html .path2:before {
+  content: "\e91a";
+  color: #ef652a;
+  margin-left: -1em;
+}
+.icon-html .path3:before {
+  content: "\e91b";
+  color: #ecedee;
+  margin-left: -1em;
+}
+.icon-html .path4:before {
+  content: "\e91c";
+  color: #fff;
+  margin-left: -1em;
+}
+
+.icon-sass:before {
+  content: "\e907";
+  color: #cd6799;
+}
+
+.icon-jquery:before {
+  content: "\e912";
+  color: #0868ac;
+}
+
+.icon-magento:before {
+  content: "\e911";
+  color: #ec6737;
+}
+
+.icon-wordpress:before {
+  content: "\e910";
+  color: #00759d;
+}
+
+.icon-figma .path1:before {
+  content: "\e90b";
+  color: #1abcfe;
+}
+.icon-figma .path2:before {
+  content: "\e90c";
+  color: #0acf83;
+  margin-left: -1em;
+}
+.icon-figma .path3:before {
+  content: "\e90d";
+  color: #ff7262;
+  margin-left: -1em;
+}
+.icon-figma .path4:before {
+  content: "\e90e";
+  color: #f24e1e;
+  margin-left: -1em;
+}
+.icon-figma:after {
+  content: "\e90f";
+  color: #a259ff;
+  margin-left: -1em;
+}
+
+.icon-invision:before {
+  content: "\e90a";
+  color: #ff2a63;
+}
+
+.icon-git:before {
+  content: "\e908";
+  color: #ee513b;
+}
+.icon-git:after {
+  content: "\e909";
+  color: #fff;
+  margin-left: -1em;
+}
