@@ -1,6 +1,7 @@
 import { navItems, PROFILE, contact_icons } from "../constans"
 
 export const Sidebar = ({ activeSection }) => {
+    console.log('render sidebar')
     return (
         <>
             <aside className="w-full lg:w-[320px] lg:h-screen lg:sticky lg:top-0 bg-corp-sidebar border-r border-slate-700/50 flex flex-col justify-between p-8 text-white z-20 shadow-xl transition-colors duration-300">
@@ -50,7 +51,7 @@ export const Sidebar = ({ activeSection }) => {
                                     href={icon.link}
                                     target="_blank"
                                     aria-label={icon.name}
-                                    className="w-[50px] h-[50px] flex items-center justify-center bg-white/5 border border-white/10 p-2 rounded-full hover:bg-primary hover:border-primary transition-all text-slate-400 hover:text-white"
+                                    className="w-12.5 h-12.5 flex items-center justify-center bg-white/5 border border-white/10 p-2 rounded-full hover:bg-primary hover:border-primary transition-all text-slate-400 hover:text-white"
                                 >
                                     <span className={`icon-${icon.name} text-white text-3xl`}></span>
                                 </a>

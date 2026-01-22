@@ -7,7 +7,7 @@ import { useState, useEffect, useRef } from 'react'
 import './App.css'
 
 function App() {
-  
+
   const [activeSection, setActiveSection] = useState('about');
   const isFirtsRender = useRef(true);
 
@@ -15,23 +15,24 @@ function App() {
   useEffect(() => {
 
     const sections = document.querySelectorAll("section");
+    console.log(sections)
     const observer = new IntersectionObserver(
       (entries) => {
         if (isFirtsRender.current) {
           isFirtsRender.current = false;
           return;
         }
-        
+
+
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
+          if (!entry.isIntersecting) return;
+          setActiveSection(entry.target.id);
         });
       },
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.6,
+        threshold: 0.3,
       }
     );
 
@@ -46,11 +47,11 @@ function App() {
   return (
     <>
       <div className='flex flex-col lg:flex-row min-h-scree'>
-        <Sidebar activeSection={activeSection}/>
+        <Sidebar activeSection={activeSection} />
         <main className='flex-1 p-6 lg:p-12 max-w-300 mx-auto w-full'>
           <div className='flex flex-col gap-10 '>
-            <About   />
-            <Experience  />
+            <About />
+            <Experience />
             <Skills />
           </div>
         </main>

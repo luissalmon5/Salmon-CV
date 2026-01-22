@@ -9,11 +9,11 @@ export const Experience = forwardRef(({ visible }, ref) => {
       </div>
 
       <div className="relative ml-2 sm:ml-4">
-        <div className="absolute left-0 top-3 bottom-0 w-[2px] bg-slate-200"></div>
+        <div className="absolute left-0 top-3 bottom-0 w-0.5 bg-slate-200"></div>
         <div className="flex flex-col gap-12">
           {EXPERIENCES.map((exp) => (
             <div key={exp.id} className="relative pl-8 sm:pl-10 group">
-              <div className="absolute -left-[7px] top-[7px] w-4 h-4 rounded-full bg-white border-[3px] border-primary z-10 shadow-[0_0_0_4px_rgba(255,255,255,1)] group-hover:scale-125 transition-transform duration-300"></div>
+              <div className="absolute -left-1.75 top-1.75 w-4 h-4 rounded-full bg-white border-[3px] border-primary z-10 shadow-[0_0_0_4px_rgba(255,255,255,1)] group-hover:scale-125 transition-transform duration-300"></div>
               
               <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2 mb-3">
                 <div>
