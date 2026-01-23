@@ -1,7 +1,7 @@
 import { navItems, PROFILE, contact_icons } from "../constans"
 
+
 export const Sidebar = ({ activeSection }) => {
-    console.log('render sidebar')
     return (
         <>
             <aside className="w-full lg:w-[320px] lg:h-screen lg:sticky lg:top-0 bg-corp-sidebar border-r border-slate-700/50 flex flex-col justify-between p-8 text-white z-20 shadow-xl transition-colors duration-300">
@@ -30,7 +30,7 @@ export const Sidebar = ({ activeSection }) => {
                             <a
                                 key={item.id}
                                 href={`#${item.id}`}
-                                className={`flex items-center gap-3 px-4 py-3 rounded-2xl transition-all group ${ item.id === activeSection
+                                className={`flex items-center gap-3 px-4 py-3 rounded-2xl transition-all group ${item.id === activeSection
                                     ? 'bg-white/10 text-primary'
                                     : 'text-slate-400 hover:text-primary hover:bg-white/5'
                                     }`}
@@ -43,7 +43,7 @@ export const Sidebar = ({ activeSection }) => {
                         ))}
                     </nav>
 
-                    <div className="mt-8 lg:mt-0 flex flex-col gap-4">
+                    <div className="mt-8 lg:mt-0 flex flex-col gap-8">
                         <div className="flex gap-6 justify-center">
                             {contact_icons.map(icon => (
                                 <a
@@ -57,6 +57,10 @@ export const Sidebar = ({ activeSection }) => {
                                 </a>
                             ))}
                         </div>
+                        <button className="w-full bg-primary hover:bg-primary-dark text-white font-bold py-3 px-4 rounded-2xl transition-all shadow-glow hover:shadow-glow-hover flex items-center justify-center gap-2">
+                            <span className="material-symbols-outlined text-[20px]">download</span>
+                            <a href='/CVLuisSalmon.pdf' download>Download CV</a>
+                        </button>
                     </div>
                 </div>
             </aside>

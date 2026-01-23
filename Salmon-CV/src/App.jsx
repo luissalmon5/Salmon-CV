@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
 
     const sections = document.querySelectorAll("section");
-    console.log(sections)
+
     const observer = new IntersectionObserver(
       (entries) => {
         if (isFirtsRender.current) {
@@ -32,7 +32,7 @@ function App() {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.3,
+        threshold: 0.6,
       }
     );
 

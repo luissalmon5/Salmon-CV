@@ -1,9 +1,8 @@
 import { EXPERIENCES } from '../constans.js';
-import { forwardRef } from "react";
 
-export const Experience = forwardRef(({ visible }, ref) => {
+export const Experience = () => {
   return (
-    <section id="experience" ref={ref} className={`${visible ? 'border-primary border-2 transition-all duration-300' : ''} bg-corp-card border border-border-color p-8 rounded-3xl shadow-soft hover:shadow-hover transition-all duration-300 scroll-mt-24`}>
+    <section id="experience" className={`bg-corp-card border border-border-color p-8 rounded-3xl shadow-soft hover:shadow-hover transition-all duration-300 scroll-mt-24`}>
       <div className="flex items-center justify-between mb-10">
         <h2 className="text-3xl font-display font-bold text-text-main">Experience</h2>
       </div>
@@ -50,5 +49,5 @@ export const Experience = forwardRef(({ visible }, ref) => {
         </div>
       </div>
     </section>
-  );
-});
+  )
+}
