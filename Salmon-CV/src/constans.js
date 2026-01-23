@@ -36,7 +36,7 @@ export const contact_icons = [
 export const PROFILE = {
     name: 'Luis Salmón',
     role: 'Frontend Developer | React.js • Responsive UI • JavaScript',
-    location: 'Chihuahu Chihuahua México',
+    location: 'Chihuahua Chihuahua México',
     languages: 'Spanish, English',
     availability: 'Full-time / Freelance',
     bio: 'Frontend Developer with 8+ years of experience designing and developing modern, scalable web applications using JavaScript, jQuery, SASS, and React.js. Highly specialized in eCommerce platforms, I consistently deliver high-quality UX/UI solutions, focusing on performance, responsiveness, and usability across all devices. I have built custom landing pages and CMS-driven websites from the ground up, avoiding heavy CSS frameworks to maintain clean, maintainable, and optimized codebases. My experience also includes developing ServiceNow Service Portals and working as a Demo Support Engineer, collaborating on ServiceNow projects by supporting demos, resolving portal issues, and assisting with platform configurations. Strong collaborator with a problem-solving mindset and a continuous learning attitude.',
@@ -73,7 +73,7 @@ export const EXPERIENCES = [
     },
     {
         id: '3',
-        title: 'Junior Fronten Developer',
+        title: 'Junior Frontend Developer',
         company: 'Concentrix Catalyst',
         period: '2017 - 2018',
         description: "Assisted in maintaining an existing Magento 1 eCommerce platform, designing and implementing new features and improvements.",
