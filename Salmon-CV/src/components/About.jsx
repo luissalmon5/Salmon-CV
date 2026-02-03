@@ -1,4 +1,4 @@
-import { PROFILE } from '../constans.js';
+import { PROFILE } from '../constants.js';
 
 export const About = ( { ref, visible }) => {
   return (

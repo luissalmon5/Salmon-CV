@@ -1,4 +1,4 @@
-import { SKILL_CATEGORIES } from '../constans.js';
+import { SKILL_CATEGORIES } from '../constants.js';
 
 export const Skills = () => {
   return (

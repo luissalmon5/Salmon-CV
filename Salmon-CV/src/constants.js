@@ -35,7 +35,7 @@ export const contact_icons = [
 
 export const PROFILE = {
     name: 'Luis Salmón',
-    role: 'Frontend Developer | React.js • Responsive UI • JavaScript',
+    role: 'Software Engineer',
     location: 'Chihuahua Chihuahua México',
     languages: 'Spanish, English',
     availability: 'Full-time / Freelance',
@@ -62,7 +62,7 @@ export const EXPERIENCES = [
         id: '2',
         title: 'Magento 2 Frontend Developer',
         company: 'Concentrix Catalyst',
-        period: '2018 - 2021',
+        period: '2019 - 2021',
         description: 'Developed responsive websites and e-commerce platforms for diverse clients. Worked closely with designers to ensure pixel-perfect implementation and cross-browser compatibility.',
         responsibilities: [
             { text: 'Develop and maintain CMS pages and reusable templates for Magento 2 projects.' },
@@ -73,8 +73,22 @@ export const EXPERIENCES = [
     },
     {
         id: '3',
+        title: 'Frontend Developer (WordPress)',
+        company: 'Gamma Partners (now Concentrix Catalyst)',
+        period: '2018 - 2019',
+        description: "Developed and maintained WordPress websites, creating pixel-perfect responsive pages based on Figma and InVision designs. Worked with multiple page builders and implemented performance and usability improvements.",
+        responsibilities: [
+            { text: 'Maintained and updated existing WordPress pages and components.' },
+            { text: 'Developed new responsive pages from Figma and InVision designs, ensuring pixel-perfect implementation for mobile and desktop.' },
+            { text: 'Created and maintained child themes to implement custom functionality and designs not supported by the WordPress Customizer.' },
+            { text: 'Configured, managed, and maintained WordPress plugins according to project requirements.' },
+            { text: 'Optimized images, fonts, and JavaScript libraries to improve page load time and overall site performance.' },
+        ]
+    },
+    {
+        id: '4',
         title: 'Junior Frontend Developer',
-        company: 'Concentrix Catalyst',
+        company: 'Gamma Partners (now Concentrix Catalyst)',
         period: '2017 - 2018',
         description: "Assisted in maintaining an existing Magento 1 eCommerce platform, designing and implementing new features and improvements.",
         responsibilities: [
@@ -85,28 +99,28 @@ export const EXPERIENCES = [
 ];
 
 export const SKILL_CATEGORIES = [
-  {
-    title: 'Technical Skills',
-    icon: 'terminal',
-    skills: [
-      { name: 'React.js', icon: 'react'},
-      { name: 'Tailwind', icon: 'tailwind'},
-      { name: 'CSS', icon: 'css'},
-      { name: 'Javascript', icon: 'javascript'},
-      { name: 'HTML', icon: 'html'},
-      { name: 'WordPress', icon: 'wordpress'},
-      { name: 'jQuery', icon: 'jquery'},
-      { name: 'Magento', icon: 'magento'},
-    ]
-  },
-  {
-    title: 'Design & Tools',
-    icon: 'design_services',
-    skills: [
-      { name: 'Figma', icon: 'figma'},
-      { name: 'Invision' , icon: 'invision'},
-      { name: 'Git' , icon: 'git'},
-      { name: 'SASS', icon: 'sass'},
-    ]
-  }
+    {
+        title: 'Technical Skills',
+        icon: 'terminal',
+        skills: [
+            { name: 'React.js', icon: 'react' },
+            { name: 'Tailwind', icon: 'tailwind' },
+            { name: 'CSS', icon: 'css' },
+            { name: 'Javascript', icon: 'javascript' },
+            { name: 'HTML', icon: 'html' },
+            { name: 'WordPress', icon: 'wordpress' },
+            { name: 'jQuery', icon: 'jquery' },
+            { name: 'Magento', icon: 'magento' },
+        ]
+    },
+    {
+        title: 'Design & Tools',
+        icon: 'design_services',
+        skills: [
+            { name: 'Figma', icon: 'figma' },
+            { name: 'Invision', icon: 'invision' },
+            { name: 'Git', icon: 'git' },
+            { name: 'SASS', icon: 'sass' },
+        ]
+    }
 ];

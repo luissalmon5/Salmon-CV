@@ -1,4 +1,4 @@
-import { EXPERIENCES } from '../constans.js';
+import { EXPERIENCES } from '../constants.js';
 
 export const Experience = () => {
   return (

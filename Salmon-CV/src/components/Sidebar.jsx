@@ -1,4 +1,4 @@
-import { navItems, PROFILE, contact_icons } from "../constans"
+import { navItems, PROFILE, contact_icons } from "../constants"
 
 
 export const Sidebar = ({ activeSection }) => {
@@ -25,7 +25,7 @@ export const Sidebar = ({ activeSection }) => {
                         </div>
                     </div>
 
-                    <nav className="flex flex-col gap-2 mt-4 fixed right-0 bottom-10 bg-corp-sidebar p-4 lg:relative">
+                    <nav className="lg:flex flex-col gap-2 mt-4 fixed right-0 bottom-10 bg-corp-sidebar p-4 lg:relative hidden">
                         {navItems.map((item) => (
                             <a
                                 key={item.id}
